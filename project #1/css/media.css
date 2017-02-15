@@ -1,0 +1,285 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	section.sponsors .spons {
+    margin: 0 100px;
+	}
+	section.sponsors .diffic_1 {
+    height: 100%;
+    width: 100%;
+    margin-top: 95px;
+    margin-bottom: 100px;
+    padding: 0;
+	}
+	section.sponsors .diffic_2 {
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 39px;
+	}
+	section.sponsors .diffic_3 {
+	    height: 100%;
+	    width: 100%;
+    	margin-top: 135px;
+	    margin-bottom: 100px;
+	}
+	section.map .info_map img{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    padding-bottom: 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.sing_event {
+    -webkit-box-shadow: #4a454b 0px 0px 1px 0px;
+    box-shadow: #4a454b 0px 0px 1px 0px;
+    padding: 0 30px;
+    max-width: 100%;
+    position: relative;
+    top: -120px;
+    background-color: #fff;
+	}
+	section.sponsors .spons {
+    margin: 0 100px;
+	}
+	section.sponsors .diffic_1 {
+    height: 100%;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    padding: 0;
+	}
+	section.sponsors .diffic_2 {
+    height: 100%;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    padding: 0;
+	}
+	section.sponsors .diffic_3 {
+	    height: 100%;
+	    width: 100%;
+	    margin-top: 120px;
+	    margin-bottom: 100px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+
+	.timer time {
+	font-size: 4em;
+	height: 90px;
+	}
+	.timer time span{
+    padding: 0 20px;
+	}
+	.timer .timers span{
+	position: relative;
+	font-family: 'RobotoSlab-Regular';
+	font-size: 1em;
+	text-transform: uppercase;
+	}
+	.too_point:after{
+    padding-left: 10px;
+	}
+	.timer time #times {
+    width: 105px;
+	}
+	.timer .timers #Days{  
+    left: -60px;
+	}
+	.timer .timers #Hours{
+	    left: -5px;
+	}
+	.timer .timers #Minutes{
+	    left: 30px;
+	}
+	.timer .timers #Seconds{
+	    left: 65px;
+	}
+	.menu ul{ 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: #4a454b;
+    display: none;
+    position: absolute;
+    vertical-align: middle;
+    width: 50%;
+    z-index: 100;
+	}
+	.menu ul li{ 
+		display: block;
+	}
+	.menu ul li a {
+		padding-right: 10%;
+	}
+	.icon {
+    width: 85px;
+    height: 85px;
+}
+	.icon {
+    	display: none;
+	}
+	section.map .info_map img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+	}
+/*.icon_1 {
+    left: 5px;
+    top: 610px;
+}
+.icon_2 {
+    left: 74px;
+    top: 595px;
+}
+.icon_3 {
+    left: 142px;
+    top: 587px;
+}
+.icon_4 {
+    left: 205px;
+    top: 588px;
+}
+.icon_5 {
+    left: 278px;
+    top: 583px;
+}*/
+	section.speakers .person {
+		border-radius: 28px;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+	.timer time {
+	font-size: 3em;
+	height: 60px;
+	}
+	section.speakers .person {
+		border-radius: 16px;
+	}
+	section.speakers .person h2 {
+		font-size: 20pt;
+	}
+	.info_speakers h1{
+		font-size: 30px;
+	}
+	.too_point:after{
+    padding-left: 5px;
+	}
+	.timer time #times {
+    width: 70px;
+	}
+	.timer time span{
+    padding: 0 10px;
+	}
+	.timer .timers span{
+	font-size: 10px;
+	}
+	.timer .timers #Days{  
+    left: -40px;
+	}
+	.timer .timers #Hours{
+	    left: -5x;
+	}
+	.timer .timers #Minutes{
+	    left: 18px;
+	}
+	.timer .timers #Seconds{
+	    left: 44px;
+	}
+	.icon {
+    	display: none;
+	}
+	/*.icon_1 {
+    top: 550px;
+	}
+	.icon_2 {
+	    top: 535px;
+	}
+	.icon_3 {
+	    top: 527px;
+	}
+	.icon_4 {
+	    top: 528px;
+	}
+	.icon_5 {
+	    top: 523px;
+	}*/
+	.menu .logo {
+		width: 230px;
+		height: 35px;
+		float: left;
+	}
+	.evanto{
+	    width: 68px;
+	    height: 16px;
+	    margin-left: 41px;
+	    position: absolute;
+
+	}
+	#Bangladesh {
+		font-size: 10px;
+	    text-decoration: none;
+	    margin-top: 20px;
+	    letter-spacing: 0px;
+	    text-transform: uppercase;
+	    position: absolute;
+	}
+	footer .button_up {
+		float: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	    top: 0px;
+	    vertical-align: middle;
+	    background-image: url(../img/svg/up.svg);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    width: 30px;
+	    height: 30px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

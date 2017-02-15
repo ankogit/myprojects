@@ -1,0 +1,24 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.mandarinshow.ru
+RewriteRule (.*) http://www.mandarinshow.ru/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://www.mandarinshow.ru/ [R=301,L]
+RewriteBase /
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:aTuDyD
+ErrorDocument 404 /404.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE aTuDyD:ERRORPAGEID
+php_value display_errors 1
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
+Options +SymLinksIfOwnerMatch
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^view/?$ view.php [L]
+RewriteRule ^view/(\d+)/?$  view.php?id=$1 [L]
+RewriteRule ^news/category/([^/]*)$ /news?category=$1 [L]
+RewriteRule ^ad$ /about.php?id=112 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
