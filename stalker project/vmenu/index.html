@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Create a Clean and Attractive Vertical Menu</title>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	
+	<script>
+	
+	$(document).ready(function () {
+
+		//Set the height of the block
+		$('#menu .block').height($('#menu li').height());
+
+		//go to the default selected item
+		topval = $('#menu .selected').position()['top'];
+		$('#menu .block').stop().animate({top: topval}, {easing: '', duration:500});
+
+		$('#menu li').hover(
+			
+			function() {
+				
+				//get the top position
+				topval = $(this).position()['top'];
+				
+				//animate the block
+				//you can add easing to it
+				$('#menu .block').stop().animate({top: topval}, {easing: '', duration:500});
+				
+				//add the hover effect to menu item
+				$(this).addClass('hover');	
+			},
+			
+			function() {		
+				//remove the hover effect
+				$(this).removeClass('hover');	
+			}
+		);
+	
+	});
+	
+	</script>
+	
+	<style>
+	
+	#menu {
+		font-family:verdana;
+		font-size:12px;
+		position:relative;
+		margin:0 auto;
+		width:200px;
+	}
+	
+	#menu ul {
+		/* remove list style */
+		list-style:none;
+		padding:0;
+		margin:0;	
+		
+		/* set the layer position */
+		position:relative;
+		z-index:5;
+	}
+	
+		#menu li {
+			/* set the styles */
+			background:#ccc url(bg.gif) no-repeat 0 0;
+			padding:5px;
+			margin:2px;
+			cursor:pointer;
+			border:1px solid #ccc;
+		}
+		
+		#menu li.hover {
+			/* on hover, change it to this image */
+			background-image:url(bg_hover.gif) !important;
+		}
+		
+		#menu li a {
+			text-decoration:none;	
+			color:#888;
+		}
+	
+	
+	#menu .block {
+		/* allow javascript to move the block */
+		position:absolute;
+		top:0;
+		
+		/* set the left position */
+		left:150px;	
+		
+		/* display above the #menu */
+		z-index:10;
+		
+		/* the image and the size */
+		background:transparent url(arrow.png) no-repeat  right;
+		width:39px;
+		padding:4px;
+		cursor:pointer;
+	}
+	
+
+
+	
+	</style>
+	
+</head>
+<body>
+<br/><br/><br/>
+<div id="menu">
+<ul>
+	<li><a href="#">Item 01</a></li>
+	<li><a href="#">Item 02</a></li>
+	<li class="selected"><a href="#">Item 03</a></li>
+	<li><a href="#">Item 04</a></li>
+	<li><a href="#">Item 05</a></li>
+	<li><a href="#">Item 05</a></li>
+</ul>
+<div class="block png"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
